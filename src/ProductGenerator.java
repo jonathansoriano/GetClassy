@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ProductGenerator {
     private static ArrayList<Product> products = new ArrayList<>();
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in); // Scanner is necessary to get input from user
+        Scanner in = new Scanner(System.in); // Scanner is necessary to get input from user.
 
         String ID = "";
         String name = "";
