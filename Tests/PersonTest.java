@@ -3,6 +3,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// To create a "Tests" directory, you need to right-click on the project folder, and press "New"
+// and click Directory and name it. Once it's made, you need to right-click the new directory and do down to "Mark Directory as"
+// and choose the option to "Tests Sources Root". Now all of your Tests will pop in the "Tests" file/directory.
+
 class PersonTest {
     Person p1, p2, p3; // We need to instantiate objects of the Person class
     @BeforeEach
