@@ -68,7 +68,8 @@ public class ProductReader {
 
                         products.add(items);
 
-                    } else {
+                    } else
+                    {
                         System.out.println("\nFound a record that may be corrupted: ");
                         System.out.println(l);
                     }

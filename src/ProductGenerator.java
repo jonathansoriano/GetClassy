@@ -15,7 +15,7 @@ public class ProductGenerator {
         boolean done = false; // Needed to repeat or end loop.
 
         while(!done){
-            name = SafeInput.getNonZeroLenString(in, "Enter a name ");
+            name = SafeInput.getNonZeroLenString(in, "Enter a product name ");
             description = SafeInput.getNonZeroLenString(in, "Enter a description of the item ");
             cost = SafeInput.getDouble(in, "Enter the cost of the item ");
 

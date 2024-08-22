@@ -20,14 +20,14 @@ public class PersonGenerator {
         do {
             // Due to the update "Person" constructor, we don't need to assign an ID; bc the constructor has a method
             // that generates sequential number ID. (generateID();)
-            firstName = SafeInput.getNonZeroLenString(in, "Enter the firstname ");
+            firstName = SafeInput.getNonZeroLenString(in, "Enter the first name ");
             lastName = SafeInput.getNonZeroLenString(in, "Enter the lastname ");
             title = SafeInput.getNonZeroLenString(in, "Enter the title ");
             yearOfBirth = SafeInput.getRangedInt(in, "Enter the year of birth ", 1940, 2000); // Need at least 4 digits for YOB
 
             Person person = new Person(firstName, lastName, title, yearOfBirth); // We instantiate person object here and
-            // and put in variables to the parameters
-            // that match the correct data type.
+                                                                             // and put in variables to the parameters
+                                                                            // that match the correct data type.
 
 
             folks.add(person);

@@ -14,7 +14,6 @@ class ProductTest {
 
     }
 
-
     @Test
     void setName() {
         pr1.setName("Dawg Treats");
