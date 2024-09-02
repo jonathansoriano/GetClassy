@@ -46,7 +46,7 @@ public class Product {
      * Computer generates a 6 char ID that increments after every use of this method.
      * @return - Returns a 6 char ID
      */
-    private String generatorID(){
+    private String generateID(){
         String newID = "" + IDSeed; //Starts at 1.
 
         while (newID.length() < 6){
