@@ -224,7 +224,7 @@ public class SafeInputObj {
             }
             else
             {
-                System.out.println("\n" + response + " must match the pattern " + regExPattern);
+                System.out.println("\n" + "'" + response + "'" + " must match the pattern " + regExPattern);
                 System.out.println("Try again!");
             }
 
