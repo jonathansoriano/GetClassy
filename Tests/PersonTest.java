@@ -75,6 +75,16 @@ class PersonTest {
     }
 
     @Test
+    void toJSONRecord(){
+        assertEquals("{\"IDNum\":\"000001\",\"firstName\":\"Jon\",\"lastName\":\"Sanjuan\",\"title\":\"Mr.\",\"YOB\":\"2000\"}", p1.toJSONRecord());
+    }
+
+    @Test
+    void toXMLRecord(){
+        assertEquals("<Person><IDNum>000001</IDNum><firstName>Jon</firstName><lastName>Sanjuan</lastName><title>Mr.</title><YOB>2000</YOB></Person>", p1.toXMLRecord());
+    }
+
+    @Test
     void toStringMethod() {
         assertEquals("Person{ID='000001', firstName='Jon', lastName='Sanjuan', title='Mr.', yob=2000}", p1.toString());
     }

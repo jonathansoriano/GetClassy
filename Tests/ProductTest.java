@@ -43,6 +43,16 @@ class ProductTest {
     }
 
     @Test
+    void toJSONRecord(){
+        assertEquals("{\"IDNum\":\"000001\",\"Name\":\"Dog Treats\",\"Description\":\"Fancy Bones\",\"Cost\":\"35.5\"}", pr1.toJSONRecord());
+    }
+
+    @Test
+    void toXMLRecord(){
+        assertEquals("<Product><IDNum>000001</IDNum><Name>Dog Treats</Name><Description>Fancy Bones</Description><Cost>35.5</Cost></Product>", pr1.toXMLRecord());
+    }
+
+    @Test
     void testToString() {
         assertEquals("Product{ID='000001', name='Dog Treats', description='Fancy Bones', cost=35.5}", pr1.toString());
     }

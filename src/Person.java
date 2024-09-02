@@ -250,7 +250,7 @@ public class Person {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { // Do I Test this with JUnit?
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
